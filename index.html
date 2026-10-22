@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Pertamaku</title>
+    <!-- Memanggil Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans m-0 p-0">
+    
+    <!-- HEADER dengan Flexbox Tailwind -->
+    <header class="flex flex-col items-center text-center bg-slate-800 text-white py-10 px-5">
+      <h1 class="text-3xl font-bold mb-2">Selamat Datang di Website Saya</h1>
+      <p class="text-gray-300">Halo! Saya adalah seorang lulusan Teknik Komputer yang sedang belajar menjadi Full Stack Developer.</p>
+    </header>
+
+    <!-- MAIN dengan CSS Grid Tailwind -->
+    <!-- grid-cols-1 (1 kolom di HP), md:grid-cols-3 (3 kolom di layar sedang/laptop) -->
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
+      
+      <section class="bg-white p-5 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-3">Bahasa yang Akan Dipelajari</h2>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>HTML (Struktur)</li>
+          <li>CSS (Desain)</li>
+          <li>JavaScript (Interaktivitas)</li>
+        </ul>
+      </section>
+
+      <section class="bg-white p-5 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-3">Target Karir</h2>
+        <ol class="list-decimal list-inside text-gray-700">
+          <li>Frontend Developer</li>
+          <li>Backend Developer</li>
+          <li>Full Stack Developer</li>
+        </ol>
+      </section>
+
+      <section class="bg-white p-5 rounded-lg shadow-md flex flex-col items-center text-center">
+        <h2 class="text-xl font-semibold mb-5">Logo Kebanggaan</h2>
+        <div class="flex justify-center items-center gap-6 mb-5">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" class="h-20 w-auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" class="h-20 w-auto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="h-20 w-auto">
+        </div>
+        <p class="text-gray-700">Belajar lebih banyak di <a href="https://developer.mozilla.org/id/docs/Learn/HTML" class="text-blue-500 hover:underline">MDN Web Docs</a>.</p>
+      </section>
+
+    </main>
+
+    <!-- FOOTER dengan Form -->
+    <footer class="bg-slate-700 text-white p-8">
+      <h2 class="text-2xl font-bold mb-5 text-center">Hubungi Saya</h2>
+      <form class="flex flex-col gap-3 max-w-md mx-auto">
+        <label for="nama" class="font-medium">Nama Anda:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama" class="p-2 rounded text-black outline-none focus:ring-2 focus:ring-blue-400">
+        
+        <label for="email" class="font-medium">Email Anda:</label>
+        <input type="email" id="email" name="email" placeholder="contoh@email.com" class="p-2 rounded text-black outline-none focus:ring-2 focus:ring-blue-400">
+        
+        <button type="submit" class="mt-3 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors">Kirim Pesan</button>
+      </form>
+    </footer>
+
+  </body>
+</html>
